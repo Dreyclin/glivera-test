@@ -4,6 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Test</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css        "
+        />
         <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -124,41 +128,129 @@
             <section class="customers">
                 <div class="customers__header">
                     <div class="customers__info">
-                        <h3 class="customers__title"></h3>
-                        <p class="customers__subtitle"></p>
+                        <h3 class="customers__title">All Customers</h3>
+                        <p class="customers__subtitle">Active Members</p>
                     </div>
-                    <input type="text" class="customers__search" />
+                    <div class="customers__wrapper">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input
+                            type="text"
+                            class="customers__search"
+                            placeholder="Search"
+                        />
+                    </div>
                 </div>
-                <table class="customers__table">
-                    <th class="customers__th">Customer Name</th>
-                    <th class="customers__th">Company</th>
-                    <th class="customers__th">Phone Number</th>
-                    <th class="customers__th">Email</th>
-                    <th class="customers__th">Country</th>
-                    <th class="customers__th">Status</th>
+                <div class="customers__table">
+                    <div class="customers__item"></div>
+                </div>
 
-                    <tr class="customers__tr">
-                        <td class="customers__td">Jane Cooper</td>
-                        <td class="customers__td">Microsoft</td>
-                        <td class="customers__td">(225) 555-0118</td>
-                        <td class="customers__td">jane@microsoft.com</td>
-                        <td class="customers__td">United States</td>
-                        <td class="customers__td--status">Active</td>
-                    </tr>
+                <table class="customers__table">
+                    <thead>
+                        <td class="customers__td">Customer Name</td>
+                        <td class="customers__td">Company</td>
+                        <td class="customers__td">Phone Number</td>
+                        <td class="customers__td">Email</td>
+                        <td class="customers__td">Country</td>
+                        <td class="customers__td">Status</td>
+                    </thead>
+                    <tbody>
+                        <tr class="customers__tr">
+                            <td class="customers__td">Jane Cooper</td>
+                            <td class="customers__td">Microsoft</td>
+                            <td class="customers__td">(225) 555-0118</td>
+                            <td class="customers__td">jane@microsoft.com</td>
+                            <td class="customers__td">United States</td>
+                            <td class="customers__td">
+                                <p
+                                    class="customers__status customers__status--active"
+                                >
+                                    Active
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="customers__tr">
+                            <td class="customers__td">Jane Cooper</td>
+                            <td class="customers__td">Microsoft</td>
+                            <td class="customers__td">(225) 555-0118</td>
+                            <td class="customers__td">jane@microsoft.com</td>
+                            <td class="customers__td">United States</td>
+                            <td class="customers__td">
+                                <p
+                                    class="customers__status customers__status--inactive"
+                                >
+                                    Inactive
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="customers__tr">
+                            <td class="customers__td">Jane Cooper</td>
+                            <td class="customers__td">Microsoft</td>
+                            <td class="customers__td">(225) 555-0118</td>
+                            <td class="customers__td">jane@microsoft.com</td>
+                            <td class="customers__td">United States</td>
+                            <td class="customers__td">
+                                <p
+                                    class="customers__status customers__status--active"
+                                >
+                                    Active
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="customers__tr">
+                            <td class="customers__td">Jane Cooper</td>
+                            <td class="customers__td">Microsoft</td>
+                            <td class="customers__td">(225) 555-0118</td>
+                            <td class="customers__td">jane@microsoft.com</td>
+                            <td class="customers__td">United States</td>
+                            <td class="customers__td">
+                                <p
+                                    class="customers__status customers__status--active"
+                                >
+                                    Active
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="customers__tr">
+                            <td class="customers__td">Jane Cooper</td>
+                            <td class="customers__td">Microsoft</td>
+                            <td class="customers__td">(225) 555-0118</td>
+                            <td class="customers__td">jane@microsoft.com</td>
+                            <td class="customers__td">United States</td>
+                            <td class="customers__td">
+                                <p
+                                    class="customers__status customers__status--inactive"
+                                >
+                                    Inactive
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
-                <section class="customers__pagination">
-                    <p class="customers__text">
-                        Showing data 1 to 8 of 256K entries
+                <section class="pagination">
+                    <p class="pagination__text">
+                        Showing data 1 to 5 of 256K entries
                     </p>
-                    <div class="customers__buttons">
-                        <button class="customers__button--prev">&lt;</button>
-                        <button class="customers__button">1</button>
-                        <button class="customers__button">2</button>
-                        <button class="customers__button">3</button>
-                        <button class="customers__button">4</button>
+                    <div class="pagination__buttons">
+                        <button
+                            class="pagination__button pagination__button--prev"
+                        >
+                            &lt;
+                        </button>
+                        <button
+                            class="pagination__button pagination__button--active"
+                        >
+                            1
+                        </button>
+                        <button class="pagination__button">2</button>
+                        <button class="pagination__button">3</button>
+                        <button class="pagination__button">4</button>
                         <p>...</p>
-                        <button class="customers__button">40</button>
-                        <button class="customers__button--next">&gt;</button>
+                        <button class="pagination__button">40</button>
+                        <button
+                            class="pagination__button pagination__button--next"
+                        >
+                            &gt;
+                        </button>
                     </div>
                 </section>
             </section>
