@@ -28,6 +28,7 @@
                 <h1 class="header__title">Dashboard</h1>
                 <span class="header__title--small"> v.01</span>
             </header>
+
             <nav class="navigation">
                 <ul class="navigation__list">
                     <li class="navigation__item">
@@ -122,7 +123,9 @@
                 </div>
             </section>
         </aside>
-
+        <div class="burger-menu" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
         <main class="main">
             <h3 class="main__header">Hello Evano&#x1F44B;,</h3>
             <section class="customers">
@@ -137,6 +140,7 @@
                             type="text"
                             class="customers__search"
                             placeholder="Search"
+                            id="search"
                         />
                     </div>
                 </div>
@@ -155,12 +159,25 @@
                     </thead>
                     <tbody>
                         <tr class="customers__tr">
-                            <td class="customers__td">Jane Cooper</td>
-                            <td class="customers__td">Microsoft</td>
-                            <td class="customers__td">(225) 555-0118</td>
-                            <td class="customers__td">jane@microsoft.com</td>
-                            <td class="customers__td">United States</td>
-                            <td class="customers__td">
+                            <td
+                                class="customers__td"
+                                data-label="Customer Name"
+                            >
+                                Jane Cooper
+                            </td>
+                            <td class="customers__td" data-label="Company">
+                                Microsoft
+                            </td>
+                            <td class="customers__td" data-label="Phone number">
+                                (225) 555-0118
+                            </td>
+                            <td class="customers__td" data-label="Email">
+                                jane@microsoft.com
+                            </td>
+                            <td class="customers__td" data-label="Country">
+                                United States
+                            </td>
+                            <td class="customers__td" data-label="Status">
                                 <p
                                     class="customers__status customers__status--active"
                                 >
@@ -169,12 +186,25 @@
                             </td>
                         </tr>
                         <tr class="customers__tr">
-                            <td class="customers__td">Jane Cooper</td>
-                            <td class="customers__td">Microsoft</td>
-                            <td class="customers__td">(225) 555-0118</td>
-                            <td class="customers__td">jane@microsoft.com</td>
-                            <td class="customers__td">United States</td>
-                            <td class="customers__td">
+                            <td
+                                class="customers__td"
+                                data-label="Customer Name"
+                            >
+                                Jane Cooper
+                            </td>
+                            <td class="customers__td" data-label="Company">
+                                Microsoft
+                            </td>
+                            <td class="customers__td" data-label="Phone number">
+                                (225) 555-0118
+                            </td>
+                            <td class="customers__td" data-label="Email">
+                                jane@microsoft.com
+                            </td>
+                            <td class="customers__td" data-label="Country">
+                                United States
+                            </td>
+                            <td class="customers__td" data-label="Status">
                                 <p
                                     class="customers__status customers__status--inactive"
                                 >
@@ -183,12 +213,25 @@
                             </td>
                         </tr>
                         <tr class="customers__tr">
-                            <td class="customers__td">Jane Cooper</td>
-                            <td class="customers__td">Microsoft</td>
-                            <td class="customers__td">(225) 555-0118</td>
-                            <td class="customers__td">jane@microsoft.com</td>
-                            <td class="customers__td">United States</td>
-                            <td class="customers__td">
+                            <td
+                                class="customers__td"
+                                data-label="Customer Name"
+                            >
+                                Jane Cooper
+                            </td>
+                            <td class="customers__td" data-label="Company">
+                                Microsoft
+                            </td>
+                            <td class="customers__td" data-label="Phone number">
+                                (225) 555-0118
+                            </td>
+                            <td class="customers__td" data-label="Email">
+                                jane@microsoft.com
+                            </td>
+                            <td class="customers__td" data-label="Country">
+                                United States
+                            </td>
+                            <td class="customers__td" data-label="Status">
                                 <p
                                     class="customers__status customers__status--active"
                                 >
@@ -197,12 +240,25 @@
                             </td>
                         </tr>
                         <tr class="customers__tr">
-                            <td class="customers__td">Jane Cooper</td>
-                            <td class="customers__td">Microsoft</td>
-                            <td class="customers__td">(225) 555-0118</td>
-                            <td class="customers__td">jane@microsoft.com</td>
-                            <td class="customers__td">United States</td>
-                            <td class="customers__td">
+                            <td
+                                class="customers__td"
+                                data-label="Customer Name"
+                            >
+                                Jane Cooper
+                            </td>
+                            <td class="customers__td" data-label="Company">
+                                Microsoft
+                            </td>
+                            <td class="customers__td" data-label="Phone number">
+                                (225) 555-0118
+                            </td>
+                            <td class="customers__td" data-label="Email">
+                                jane@microsoft.com
+                            </td>
+                            <td class="customers__td" data-label="Country">
+                                United States
+                            </td>
+                            <td class="customers__td" data-label="Status">
                                 <p
                                     class="customers__status customers__status--active"
                                 >
@@ -211,12 +267,25 @@
                             </td>
                         </tr>
                         <tr class="customers__tr">
-                            <td class="customers__td">Jane Cooper</td>
-                            <td class="customers__td">Microsoft</td>
-                            <td class="customers__td">(225) 555-0118</td>
-                            <td class="customers__td">jane@microsoft.com</td>
-                            <td class="customers__td">United States</td>
-                            <td class="customers__td">
+                            <td
+                                class="customers__td"
+                                data-label="Customer Name"
+                            >
+                                Jane Cooper
+                            </td>
+                            <td class="customers__td" data-label="Company">
+                                Microsoft
+                            </td>
+                            <td class="customers__td" data-label="Phone number">
+                                (225) 555-0118
+                            </td>
+                            <td class="customers__td" data-label="Email">
+                                jane@microsoft.com
+                            </td>
+                            <td class="customers__td" data-label="Country">
+                                United States
+                            </td>
+                            <td class="customers__td" data-label="Status">
                                 <p
                                     class="customers__status customers__status--inactive"
                                 >
@@ -255,7 +324,6 @@
                 </section>
             </section>
         </main>
-
         <script src="script.js"></script>
     </body>
 </html>
