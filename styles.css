@@ -3,6 +3,8 @@ body {
     background-color: #fafbff;
     display: flex;
     gap: 4.375rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 aside {
@@ -47,6 +49,7 @@ aside {
     padding: 0.8125rem;
     border-radius: 8px;
     transition: background-color 0.3s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out;
 }
 
 .navigation__item:not(.navigation__item--active):hover {
@@ -269,11 +272,15 @@ table {
         z-index: 999;
         transition: transform 0.3s ease-in-out;
         overflow: hidden;
+        -webkit-transition: transform 0.3s ease-in-out;
+        -moz-transition: transform 0.3s ease-in-out;
     }
 
     main.open {
         transform: translateX(80%);
         transition: transform 0.3s ease-in-out;
+        -webkit-transition: transform 0.3s ease-in-out;
+        -moz-transition: transform 0.3s ease-in-out;
     }
 
     .burger-menu {
@@ -347,23 +354,14 @@ table {
 
     .customers__td::before {
         content: attr(data-label);
-        font-weight: 500;
-        display: block;
-        color: #b5b7c0;
+        font-weight: bold;
+        display: inline-block;
         margin-bottom: 0.5rem;
-    }
-
-    .customers__td:not(:last-child) {
-        border-bottom: none;
     }
 
     .pagination {
         flex-direction: column;
-        gap: 0.8rem;
+        gap: 1rem;
         align-items: flex-start;
-    }
-
-    .pagination__buttons {
-        gap: 0.35rem;
     }
 }
