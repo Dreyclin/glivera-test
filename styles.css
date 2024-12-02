@@ -248,7 +248,11 @@ table {
     display: none;
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 768px) {
+    body {
+        display: block;
+    }
+
     aside {
         display: none;
     }
@@ -312,7 +316,7 @@ table {
     }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 768px) {
     .main__header {
         padding: 0 0 0 1.1875rem;
     }
