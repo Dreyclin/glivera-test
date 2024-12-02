@@ -1,3 +1,100 @@
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #FAFBFF;
+}
+
+aside {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    gap: 4rem;
+    width: 24.12rem;
+    background: #FFFF;
+    padding: 2.25rem 1.75rem 4.75rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.625rem;
+    font-weight: 600;
+}
+
+.header__title--small {
+    font-size: 0.625rem;
+    font-weight: 400;
+    color: #838383;
+    align-self: flex-end;
+}
+
+.navigation__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+.navigation__item {
+    display: flex;
+    font-size: 0.875rem;
+    color: #9197B3;
+    gap: 0.875rem;
+    align-items: center;
+    padding: 0.8125rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navigation__item:not(.navigation__item--active):hover {
+    cursor: pointer;
+    background-color: #5932EA;
+    color: #ffff;
+}
+
+.navigation__item:not(.navigation__item--active):hover .navigation__arrow {
+    filter: brightness(0) invert(1);
+}
+
+.navigation__item:not(.navigation__item--active):hover .navigation__icon {
+    filter: brightness(0) invert(1);
+}
+
+.navigation__item--active {
+    background-color: #5932EA;
+    color: #fff;
+}
+
+.navigation__item--active .navigation__arrow {
+    filter: brightness(0) invert(1);
+}
+
+.navigation__icon {
+    width: 1.5rem;
+    flex-shrink: 0;
+}
+
+.navigation__arrow {
+    margin-left: auto;
+}
+
+.profile {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+
+
+.profile__name {
+    font-size: 0.875rem;
+    font-weight: 600;
+
+}
+
+.profile__position {
+    font-size: 0.75rem;
+    color: #757575;
 }
